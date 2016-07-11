@@ -13,7 +13,11 @@ public class Company {
         this.website = website;
     }
 
-    public String getName() {
+    public Company() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getName() {
         return name;
     }
 

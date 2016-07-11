@@ -4,11 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bson.types.ObjectId;
-import org.omg.CORBA.DynAnyPackage.Invalid;
 
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
@@ -28,7 +25,12 @@ public class UserService implements IUserService {
 		this.db = db;
 		this.collection = db.getCollection("users");
 	}
-	
+
+	public UserService() {
+		db = null;
+		collection = null;
+	}
+
 	@Override
 	public List<User> findAll() {
 		List<User> users = new ArrayList<>();

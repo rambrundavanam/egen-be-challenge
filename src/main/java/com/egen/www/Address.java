@@ -19,7 +19,11 @@ public class Address {
         this.zipCode = zipCode;
     }
 
-    public String getStreet() {
+    public Address() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getStreet() {
         return street;
     }
 
