@@ -13,8 +13,6 @@ import com.mongodb.MongoClientOptions;
 import com.mongodb.ServerAddress;
 import com.mongodb.WriteConcern;
 
-@Configuration
-@ComponentScan(basePackages="com.egen.www")
 public class Bootstrap {
 	private static final String IP_ADDRESS = System.getenv("OPENSHIFT_DIY_IP") != null
 			? System.getenv("OPENSHIFT_DIY_IP") : "localhost";
